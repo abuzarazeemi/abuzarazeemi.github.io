@@ -45,8 +45,21 @@ a{color:inherit;text-decoration:none}
 
 nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(10,15,28,.7);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-weight:800;letter-spacing:-.5px}
-.logo span{color:var(--accent)}
+.logo{font-weight:800;letter-spacing:-.5px;display:flex;align-items:center;gap:10px}
+.logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);box-shadow:0 0 12px rgba(139,92,246,.4)}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+.portrait{position:relative;justify-self:center;width:min(360px,80vw);aspect-ratio:1}
+.portrait::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(from 200deg,var(--accent),var(--accent2),var(--accent));filter:blur(.5px);animation:spin 8s linear infinite}
+.portrait::after{content:"";position:absolute;inset:-40px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.35),transparent 65%);z-index:-1}
+.portrait img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid var(--bg)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{position:absolute;padding:8px 14px;border-radius:99px;background:rgba(20,28,48,.9);border:1px solid var(--line);font-size:.85rem;font-weight:600;white-space:nowrap;backdrop-filter:blur(6px);box-shadow:0 8px 24px rgba(0,0,0,.35);animation:float 4s ease-in-out infinite}
+.chip1{left:-24px;bottom:18%}
+.chip2{right:-18px;top:12%;animation-delay:-2s}
+@keyframes float{50%{transform:translateY(-8px)}}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:40px}.portrait{order:-1;width:min(240px,64vw)}.chip{font-size:.75rem}.chip1{left:-30px}.chip2{right:-30px}}
+.logo .lt{color:var(--text)}
+.logo .lt span{color:var(--accent)}
 nav ul{display:flex;gap:24px;list-style:none;font-size:.92rem;color:var(--muted)}
 nav ul a:hover{color:var(--text)}
 @media(max-width:720px){nav ul{display:none}}
@@ -55,7 +68,7 @@ nav ul a:hover{color:var(--text)}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;font-size:.85rem;color:var(--muted);background:var(--bg2)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:pulse 2s infinite}
 @keyframes pulse{50%{opacity:.4}}
-h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.08;letter-spacing:-2px;margin:22px 0 18px;font-weight:800}
+h1{font-size:clamp(2.3rem,5.2vw,3.7rem);line-height:1.08;letter-spacing:-2px;margin:22px 0 18px;font-weight:800}
 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{font-size:1.15rem;color:var(--muted);max-width:640px}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
@@ -122,7 +135,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
 <div class="glow"></div>
 
 <nav><div class="wrap">
-  <a href="#" class="logo">abuzar<span>.</span>dev</a>
+  <a href="#" class="logo"><img src="abuzar-sm.jpg" alt="" width="36" height="36"><span class="lt">abuzar<span>.</span>dev</span></a>
   <ul>
     <li><a href="#services">Services</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -133,12 +146,21 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
 </div></nav>
 
 <header class="hero wrap">
+  <div class="hero-grid">
+  <div>
   <span class="badge"><span class="dot"></span> Available for freelance projects</span>
   <h1>Hi, I'm Abuzar.<br>I <span class="grad">automate work</span><br>and build web apps.</h1>
   <p class="lead">Software developer with 5+ years of experience. I build Python automation, n8n workflows and trading bots, and full-stack web apps with React, Vue and Node.js (MERN / MEVN).</p>
   <div class="cta">
     <a class="btn primary" href="#contact">Hire me</a>
     <a class="btn" href="#projects">See my work</a>
+  </div>
+  </div>
+  <div class="portrait">
+    <img src="abuzar.jpg" alt="Abuzar Azeemi" width="640" height="640">
+    <span class="chip chip1">🐍 Python & n8n</span>
+    <span class="chip chip2">⚡ MERN / MEVN</span>
+  </div>
   </div>
   <div class="stats">
     <div class="stat"><b>5+</b><span>years building software</span></div>
