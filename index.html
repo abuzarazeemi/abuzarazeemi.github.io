@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abuzar Azeemi | Python Automation & Full-Stack Developer</title>
-<meta name="description" content="Abuzar Azeemi — software developer with 5+ years of experience. Python automation, n8n workflows, trading bots, and full-stack MERN / MEVN web development.">
-<meta property="og:title" content="Abuzar Azeemi | Python Automation & Full-Stack Developer">
-<meta property="og:description" content="Automation scripts, n8n workflows, trading bots and full-stack MERN / MEVN web apps. 5+ years of experience, 5.0★ from 36 client reviews on Upwork & Fiverr.">
+<title>Abuzar Azeemi | AI Agent, Automation & Full-Stack Developer</title>
+<meta name="description" content="Abuzar Azeemi — software developer with 5+ years of experience. AI agents and LLM apps, Python automation, n8n workflows, trading bots, and full-stack MERN / MEVN web development.">
+<meta property="og:title" content="Abuzar Azeemi | AI Agent, Automation & Full-Stack Developer">
+<meta property="og:description" content="AI agents, chatbots, RAG assistants, n8n workflows, trading bots and full-stack MERN / MEVN web apps. 5+ years of experience, 5.0★ from 36 client reviews on Upwork & Fiverr.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://abuzarazeemi.github.io/">
 <meta property="og:site_name" content="Abuzar Azeemi">
@@ -15,8 +15,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Abuzar Azeemi, Python Automation & Full-Stack Developer">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Abuzar Azeemi | Python Automation & Full-Stack Developer">
-<meta name="twitter:description" content="Automation scripts, n8n workflows, trading bots and full-stack web apps. 5.0★ from 36 client reviews.">
+<meta name="twitter:title" content="Abuzar Azeemi | AI Agent, Automation & Full-Stack Developer">
+<meta name="twitter:description" content="AI agents, automation workflows, trading bots and full-stack web apps. 5.0★ from 36 client reviews.">
 <meta name="twitter:image" content="https://abuzarazeemi.github.io/og-image.png">
 <meta name="author" content="Abuzar Azeemi">
 <link rel="canonical" href="https://abuzarazeemi.github.io/">
@@ -127,6 +127,53 @@ h2{font-size:clamp(1.8rem,4vw,2.5rem);letter-spacing:-1px;margin:8px 0 32px}
 .av{width:42px;height:42px;flex:none;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.1rem;color:#0a0f1c}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
 
+/* hero network background */
+.hero-shell{position:relative;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;z-index:-1;opacity:.6;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent)}
+.chip3{left:4%;top:-2%;animation-delay:-1s;border-color:rgba(139,92,246,.6);box-shadow:0 0 18px rgba(139,92,246,.35)}
+@media(max-width:860px){.chip3{left:-20px;top:0}}
+
+/* AI agents section */
+.ai-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 24px;margin-bottom:32px}
+.ai-head h2{margin-bottom:0}
+.ai-head p{color:var(--muted);max-width:460px}
+.new{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:99px;font-size:.7rem;letter-spacing:1px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;vertical-align:middle}
+.ai-panel{display:grid;grid-template-columns:1fr 1.35fr;gap:24px;align-items:stretch;margin-bottom:24px}
+@media(max-width:860px){.ai-panel{grid-template-columns:1fr}}
+.loop{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.loop svg{width:100%;max-width:340px;height:auto;margin:0 auto;display:block}
+.loop p{color:var(--muted);font-size:.9rem;text-align:center}
+.ring{fill:none;stroke:var(--line);stroke-width:2;stroke-dasharray:4 6}
+.node circle{fill:var(--bg2);stroke:var(--line);stroke-width:2;animation:nodeOn 4s infinite}
+.node text,.core text{fill:var(--text);text-anchor:middle;font-family:Inter,sans-serif}
+.node .lbl{font-size:11px;font-weight:600;fill:var(--muted)}
+.n2 circle{animation-delay:1s}.n3 circle{animation-delay:2s}.n4 circle{animation-delay:3s}
+@keyframes nodeOn{0%,18%{stroke:#22d3ee;fill:rgba(34,211,238,.14)}26%,100%{stroke:var(--line);fill:var(--bg2)}}
+.core circle{fill:url(#coreG);filter:drop-shadow(0 0 18px rgba(139,92,246,.6))}
+.core .t1{font-size:12px;font-weight:800}
+.core .t2{font-size:9px;fill:#e9e3ff}
+.pulse-dot{fill:#22d3ee;filter:drop-shadow(0 0 6px #22d3ee)}
+.term{background:#070b15;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 0 1px rgba(139,92,246,.12);display:flex;flex-direction:column}
+.term-bar{display:flex;align-items:center;gap:6px;padding:11px 16px;border-bottom:1px solid var(--line);background:#0d1322}
+.term-bar i{width:10px;height:10px;border-radius:50%;background:#f87171}
+.term-bar i:nth-child(2){background:#fbbf24}.term-bar i:nth-child(3){background:#34d399}
+.term-bar span{margin-left:10px;font-size:.78rem;color:var(--muted)}
+.term-body{padding:18px;font-family:"JetBrains Mono",monospace;font-size:.8rem;line-height:1.7;min-height:330px;flex:1}
+.t-l{display:grid;grid-template-columns:64px 1fr;gap:8px;opacity:0;transform:translateX(-6px);transition:.35s;margin-bottom:4px}
+.t-l.on{opacity:1;transform:none}
+.t-l.cmd{grid-template-columns:1fr;color:var(--text);margin-bottom:10px}
+.t-l .r{color:var(--muted)}
+.k-think{color:#c4b5fd}.k-tool{color:var(--accent2)}.k-check{color:#fbbf24}.k-ok{color:var(--green)}
+.cursor{display:inline-block;width:8px;height:1em;background:var(--accent2);vertical-align:-2px;animation:pulse 1s steps(1) infinite}
+.t-note{font-family:Inter,sans-serif;font-size:.75rem;color:var(--muted);padding:0 18px 14px}
+.ai-card::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));opacity:.8}
+.ai-card .icon{background:linear-gradient(135deg,rgba(139,92,246,.25),rgba(34,211,238,.15))}
+.stack{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:26px;padding:18px 20px;border:1px dashed var(--line);border-radius:16px}
+.stack b{font-size:.85rem;color:var(--muted);font-weight:500;margin-right:6px}
+.stack span{font-size:.85rem;padding:6px 12px;border-radius:10px;background:var(--bg2);border:1px solid var(--line)}
+.skill.ai{border-color:rgba(139,92,246,.55);background:linear-gradient(135deg,rgba(139,92,246,.16),rgba(34,211,238,.06))}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal,.t-l{opacity:1;transform:none}}
+
 .reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
 .reveal.in{opacity:1;transform:none}
 </style>
@@ -137,6 +184,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
 <nav><div class="wrap">
   <a href="#" class="logo"><img src="abuzar-sm.jpg" alt="" width="36" height="36"><span class="lt">abuzar<span>.</span>dev</span></a>
   <ul>
+    <li><a href="#ai-agents">AI Agents</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -145,19 +193,22 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
   </ul>
 </div></nav>
 
+<div class="hero-shell">
+<canvas id="net" aria-hidden="true"></canvas>
 <header class="hero wrap">
   <div class="hero-grid">
   <div>
-  <span class="badge"><span class="dot"></span> Available for freelance projects</span>
-  <h1>Hi, I'm Abuzar.<br>I <span class="grad">automate work</span><br>and build web apps.</h1>
-  <p class="lead">Software developer with 5+ years of experience. I build Python automation, n8n workflows and trading bots, and full-stack web apps with React, Vue and Node.js (MERN / MEVN).</p>
+  <span class="badge"><span class="dot"></span> Available for freelance · AI agent projects open</span>
+  <h1>Hi, I'm Abuzar.<br>I build <span class="grad">AI agents</span>,<br>automations and web apps.</h1>
+  <p class="lead">Software developer with 5+ years of experience. I build AI agents and chatbots that use your tools and data, Python and n8n automation, trading bots, and full-stack web apps with React, Vue and Node.js (MERN / MEVN).</p>
   <div class="cta">
     <a class="btn primary" href="#contact">Hire me</a>
-    <a class="btn" href="#projects">See my work</a>
+    <a class="btn" href="#ai-agents">See how my AI agents work</a>
   </div>
   </div>
   <div class="portrait">
     <img src="abuzar.jpg" alt="Abuzar Azeemi" width="640" height="640">
+    <span class="chip chip3">🤖 AI Agents & LLMs</span>
     <span class="chip chip1">🐍 Python & n8n</span>
     <span class="chip chip2">⚡ MERN / MEVN</span>
   </div>
@@ -169,11 +220,92 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
     <div class="stat"><b>5.0★</b><span>client ratings on Upwork & Fiverr</span></div>
   </div>
 </header>
+</div>
+
+<section id="ai-agents" class="wrap reveal">
+  <div class="ai-head">
+    <div>
+      <div class="kicker">AI Agents <span class="new">NEW</span></div>
+      <h2>AI agents that <span class="grad">do the work</span>, not just chat</h2>
+    </div>
+    <p>An agent gets a goal, plans the steps, uses your real tools (email, CRM, Sheets, databases, APIs) and checks its own results. Risky steps wait for your approval.</p>
+  </div>
+
+  <div class="ai-panel">
+    <div class="loop">
+      <svg viewBox="0 0 320 320" role="img" aria-label="Agent loop: goal, plan, act with tools, check, repeat">
+        <defs><radialGradient id="coreG"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#6d28d9"/></radialGradient></defs>
+        <path id="orbit" class="ring" d="M160,50 A110,110 0 1,1 159.99,50"/>
+        <g class="core"><circle cx="160" cy="160" r="46"/><text class="t1" x="160" y="158">LLM</text><text class="t2" x="160" y="174">reasoning</text></g>
+        <g class="node n1"><circle cx="160" cy="50" r="32"/><text x="160" y="48" font-size="16">🎯</text><text class="lbl" x="160" y="66">Goal</text></g>
+        <g class="node n2"><circle cx="270" cy="160" r="32"/><text x="270" y="158" font-size="16">🧭</text><text class="lbl" x="270" y="176">Plan</text></g>
+        <g class="node n3"><circle cx="160" cy="270" r="32"/><text x="160" y="268" font-size="16">🛠️</text><text class="lbl" x="160" y="286">Use tools</text></g>
+        <g class="node n4"><circle cx="50" cy="160" r="32"/><text x="50" y="158" font-size="16">✅</text><text class="lbl" x="50" y="176">Check</text></g>
+        <circle class="pulse-dot" r="5"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#orbit"/></animateMotion></circle>
+      </svg>
+      <p>Goal → plan → use tools → check, repeated until the job is done.</p>
+    </div>
+
+    <div class="term" aria-label="Example AI agent run">
+      <div class="term-bar"><i></i><i></i><i></i><span>lead-agent · example run</span></div>
+      <div class="term-body" id="term"></div>
+      <div class="t-note">Example of a sales-inbox agent. Tools, steps and approvals are set up for each client.</div>
+    </div>
+  </div>
+
+  <div class="grid3">
+    <div class="card ai-card">
+      <div class="icon">🧠</div>
+      <h3>Tool-using AI agents</h3>
+      <p>Agents that call your APIs, databases and apps to finish multi-step tasks from start to end.</p>
+    </div>
+    <div class="card ai-card">
+      <div class="icon">📚</div>
+      <h3>Chat with your documents</h3>
+      <p>RAG assistants that answer from your PDFs, Notion, website or database, and show the source of each answer.</p>
+    </div>
+    <div class="card ai-card">
+      <div class="icon">💬</div>
+      <h3>Support & sales chatbots</h3>
+      <p>Telegram, WhatsApp, Discord or website agents that reply to customers, qualify leads and hand off to a human.</p>
+    </div>
+    <div class="card ai-card">
+      <div class="icon">🔁</div>
+      <h3>AI workflows in n8n</h3>
+      <p>Classify emails, summarise tickets, read invoices and send the results to Sheets, your CRM or Slack.</p>
+    </div>
+    <div class="card ai-card">
+      <div class="icon">🔌</div>
+      <h3>MCP servers & integrations</h3>
+      <p>Connect Claude, ChatGPT or Cursor to your company's tools and data, with access limited to what you allow.</p>
+    </div>
+    <div class="card ai-card">
+      <div class="icon">🛡️</div>
+      <h3>Built to be reliable</h3>
+      <p>Logging, retries, spending limits and approval steps, so the agent never does anything risky on its own.</p>
+    </div>
+  </div>
+
+  <div class="stack"><b>Works with</b><span>OpenAI</span><span>Claude</span><span>Gemini</span><span>LangChain</span><span>LangGraph</span><span>n8n</span><span>MCP</span><span>Vector databases</span><span>Python</span><span>Node.js</span></div>
+</section>
 
 <section id="services" class="wrap reveal">
   <div class="kicker">What I do</div>
-  <h2>Two ways I can help</h2>
-  <div class="grid2">
+  <h2>Three ways I can help</h2>
+  <div class="grid3">
+    <div class="card ai-card">
+      <div class="icon">🤖</div>
+      <h3>AI Agents & LLM Apps</h3>
+      <p>Add AI to your business in a way that saves real hours: agents, chatbots and assistants connected to your own tools and data.</p>
+      <ul>
+        <li>AI agents that use your APIs, CRM, email and Sheets</li>
+        <li>Chatbots for support and lead qualification</li>
+        <li>Document Q&A (RAG) over your files and knowledge base</li>
+        <li>AI steps inside n8n workflows</li>
+        <li>MCP servers, guardrails and human approval</li>
+      </ul>
+      <div class="tags"><span class="tag">OpenAI</span><span class="tag">Claude</span><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">MCP</span></div>
+    </div>
     <div class="card">
       <div class="icon">⚙️</div>
       <h3>Python Automation & Bots</h3>
@@ -360,6 +492,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
   <div class="kicker">Toolbox</div>
   <h2>Skills</h2>
   <div class="skills">
+    <span class="skill ai">AI Agents</span><span class="skill ai">OpenAI API</span><span class="skill ai">Claude API</span><span class="skill ai">LangChain</span><span class="skill ai">LangGraph</span>
+    <span class="skill ai">RAG</span><span class="skill ai">Vector databases</span><span class="skill ai">MCP</span><span class="skill ai">Function calling</span><span class="skill ai">Prompt engineering</span>
     <span class="skill">Python</span><span class="skill">n8n</span><span class="skill">pandas</span><span class="skill">Selenium</span>
     <span class="skill">Google Sheets API</span><span class="skill">Telegram Bot API</span><span class="skill">Freqtrade</span>
     <span class="skill">JavaScript</span><span class="skill">TypeScript</span><span class="skill">Vue 3</span><span class="skill">Nuxt</span>
@@ -371,7 +505,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
 <section id="contact" class="wrap reveal">
   <div class="contact">
     <div class="kicker">Let's work together</div>
-    <h2>Have a task to automate or an app to build?</h2>
+    <h2>Have an AI agent, an automation or an app in mind?</h2>
     <p>Tell me what you need. I'll reply with a clear plan and a fixed price.</p>
     <a class="email mono" href="mailto:abuzar.azeemi@gmail.com">abuzar.azeemi@gmail.com</a>
     <div class="cta">
@@ -389,6 +523,67 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:40px 0}
 document.getElementById('y').textContent = new Date().getFullYear();
 const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), {threshold:.12});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// agent terminal demo
+const LINES = [
+  ['cmd','','$ agent run "Add today\'s new sales leads from the inbox to the CRM"'],
+  ['k-think','think','Plan: read inbox → find sales emails → pull contact details → update CRM'],
+  ['k-tool','tool','gmail.search(newer_than: 1d)', '14 emails'],
+  ['k-tool','tool','llm.classify(14 emails)', '3 sales leads'],
+  ['k-tool','tool','llm.extract(name, company, budget)', '3 records'],
+  ['k-check','check','One lead has a budget over $5k, so asking for approval'],
+  ['k-ok','human','Approved on Telegram'],
+  ['k-tool','tool','crm.create_contact × 3', 'done'],
+  ['k-ok','done','3 leads added, summary sent to Slack · 38s']
+];
+const term = document.getElementById('term');
+function line([c,l,t,r]){
+  const d = document.createElement('div');
+  d.className = 't-l ' + (c==='cmd' ? 'cmd' : '');
+  if (c==='cmd') d.textContent = t;
+  else d.innerHTML = '<span class="'+c+'">'+l+'</span><span>'+t+(r?' <span class="r">→ '+r+'</span>':'')+'</span>';
+  return d;
+}
+function runTerm(){
+  term.innerHTML = '';
+  if (RM){ LINES.forEach(x => { const d=line(x); d.classList.add('on'); term.appendChild(d); }); return; }
+  let i = 0;
+  const cur = document.createElement('span'); cur.className = 'cursor';
+  (function step(){
+    cur.remove();
+    if (i < LINES.length){
+      const d = line(LINES[i++]); term.appendChild(d); requestAnimationFrame(()=>d.classList.add('on'));
+      term.appendChild(cur); setTimeout(step, i===1 ? 1100 : 850);
+    } else { term.appendChild(cur); setTimeout(runTerm, 5000); }
+  })();
+}
+let started = false;
+new IntersectionObserver(es => { if (es[0].isIntersecting && !started){ started = true; runTerm(); } }, {threshold:.3}).observe(term);
+
+// hero network background
+(function(){
+  const c = document.getElementById('net'), x = c.getContext('2d');
+  let w, h, pts, raf, dpr = Math.min(devicePixelRatio || 1, 2);
+  function size(){
+    w = c.clientWidth; h = c.clientHeight; c.width = w*dpr; c.height = h*dpr; x.setTransform(dpr,0,0,dpr,0,0);
+    const n = Math.round(Math.min(70, w*h/18000));
+    pts = Array.from({length:n}, () => ({x:Math.random()*w, y:Math.random()*h, vx:(Math.random()-.5)*.35, vy:(Math.random()-.5)*.35}));
+  }
+  function draw(){
+    x.clearRect(0,0,w,h);
+    for (const p of pts){ p.x+=p.vx; p.y+=p.vy; if(p.x<0||p.x>w)p.vx*=-1; if(p.y<0||p.y>h)p.vy*=-1; }
+    for (let i=0;i<pts.length;i++) for (let j=i+1;j<pts.length;j++){
+      const a=pts[i], b=pts[j], d=Math.hypot(a.x-b.x, a.y-b.y);
+      if (d<130){ x.strokeStyle='rgba(139,92,246,'+(1-d/130)*.35+')'; x.lineWidth=1; x.beginPath(); x.moveTo(a.x,a.y); x.lineTo(b.x,b.y); x.stroke(); }
+    }
+    for (const p of pts){ x.fillStyle='rgba(34,211,238,.7)'; x.beginPath(); x.arc(p.x,p.y,1.6,0,6.3); x.fill(); }
+    if (!RM) raf = requestAnimationFrame(draw);
+  }
+  size(); draw();
+  addEventListener('resize', () => { cancelAnimationFrame(raf); size(); draw(); });
+  document.addEventListener('visibilitychange', () => { cancelAnimationFrame(raf); if (!document.hidden) draw(); });
+})();
 </script>
 </body>
 </html>
